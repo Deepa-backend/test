@@ -1,5 +1,5 @@
  const express = require ('express')
-
+const upload = multer({ dest: 'uploads/' })
  const router = express.Router();
 
  const User = require('../models/User')

@@ -22,5 +22,6 @@ async function connectDB() {
 
 module.exports = async (req, res) => {
   await connectDB();
-  return app(req, res); // Handle request with Express
+ return app.handle(req, res);
+ // Handle request with Express
 };
